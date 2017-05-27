@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей](https://up.htmlacademy.ru/adaptive/11/user/320325).
-* Наставник: `Неизвестно`.
+* Наставник: [Гоша Егорян] (https://htmlacademy.ru/profile/id85633).
 
 ---
 
