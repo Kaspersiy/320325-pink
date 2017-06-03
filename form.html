@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк - форма конкурса</title>
+  </head>
+  <body>
+
+    <header class="page-header  page-header--form">
+      <div class="page-header-wrap  page-header-wrap--form">
+        <div class="page-header__logo  page-header__logo--form"> <!-- логотип PINK -->
+          <img src="http://placehold.it/150x100">
+        </div>
+        <nav class="main-nav  main-nav--form"> <!-- main-nav--open - для открытого состояния меню -->
+          <span class="main-nav__toggler  main-nav__toggler--form"><span></span></span>
+            <ul class="main-nav__list  main-nav__list--form">
+              <li class="main-nav__item  main-nav__item--form  main-nav__item--active"><a>Главная</a></li>
+              <li class="main-nav__item  main-nav__item--form"><a href="#">Фотографии</a></li>
+              <li class="main-nav__item  main-nav__item--form"><a href="#">Конкурс</a></li>
+              <li class="main-nav__item  main-nav__item--form"><a href="#">HTML Academy</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main  page-main--form">
+        <div class="page-main-wrap  page-main-wrap--form">
+          <section class="page-main-header--form">
+            <div class="page-main-header__background-photo--form">
+              <img src="http://placehold.it/150x100" alt="Old house">
+            </div>
+            <h1 class="page-main-header__title  page-main-header--form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          </section>
+          <div class="page-main-persdata">
+            <p class="page-main-persdata__title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+            <form class="persdata-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="persdata-form__wrapper">
+                <label class="persdata-form__family"><span class="sections-title">Фамилия:</span>
+                  <input type="text" value="Укажите фамилию *" name="field-family">
+                </label>
+              </div>
+              <div class="persdata-form__wrapper">
+                <label class="persdata-form__name"><span class="sections-title">Имя:</span>
+                  <input type="text" value="Введите ваше имя *" name="field-name">
+                </label>
+              </div>
+              <div class="persdata-form__wrapper">
+                <label class="persdata-form__midname"><span class="sections-title">Фамилия:</span>
+                  <input type="text" value="Ну и отчество тоже" name="field-midname">
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="page-main--backgrey  page-main-interviewing">
+            <h2 class="sections-title  page-main-interviewing__title">Ваши безбашенные достижения в путешествии</h2>
+            <form class="interviewing-form" action="URL" method="get">
+                <div class="interviewing-checkbox">
+                  <label class="interviewing-form__selfie"><input type="checkbox" value="1" name="selfie">
+                  <span>Сделал селфи с акулой</span></label>
+                </div>
+                <div class="interviewing-checkbox">
+                  <label class="interviewing-form__beach"><input type="checkbox" value="2" name="beach">
+                  <span>Обгорел на пляже</span></label>
+                </div>
+                <div class="interviewing-checkbox">
+                  <label class="interviewing-form__chuck"><input type="checkbox" value="3" name="chuck">
+                  <span>Видел Чака Норриса</span></label>
+                </div>
+                <div class="interviewing-checkbox">
+                  <label class="interviewing-form__souvenir"><input type="checkbox" value="4" name="souvenir">
+                  <span>Накупил сувениров</span></label>
+                </div>
+                <div class="interviewing-checkbox">
+                  <label class="interviewing-form__tower"><input type="checkbox" value="5" name="tower">
+                  <span>Удержал башню</span></label>
+                </div>
+                <div class="interviewing-checkbox">
+                  <label class="interviewing-form__hotel"><input type="checkbox" value="6" name="hotel">
+                  <span>Разгромил отель</span></label>
+                </div>
+            </form>
+          </div>
+          <div class="contactdate">
+            <form class="contactdate-form" action="URL" method="post">
+              <div class="contactdate-form__wrapper">
+                <label class="contactdate-form__tel"><span class="sections-title">Номер телефона</span>
+                  <input type="text" value="Номер, пожалуйста" name="field-tel">
+                </label>
+              </div>
+              <div class="contactdate-form__wrapper">
+                <label class="contactdate-form__email"><span class="sections-title">Адрес почты</span>
+                  <input type="text" value="Введите почту *" name="field-email">
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="page-main--backgrey  page-main-app">
+            <h2 class="sections-title  page-main-app__title">С какими приложениями путешестовали?</h2>
+            <form class="app-form" action="URL" method="get">
+                <div class="app-radiobtn">
+                  <label class="app-radiobtn__windows"><input type="radio" value="1" name="windows">
+                  <span>Pink для iOS</span></label>
+                </div>
+                <div class="app-radiobtn">
+                  <label class="app-radiobtn__android"><input type="radio" value="2" name="android">
+                  <span>Pink для Android</span></label>
+                </div>
+                <div class="app-radiobtn">
+                  <label class="app-radiobtn__ios"><input type="radio" value="3" name="ios">
+                  <span>Windows Phone</span></label>
+                </div>
+            </form>
+          </div>
+          <div class="page-main-message">
+            <h2 class="sections-title  page-main-message__title">Опишите свои эмоции</h2>
+            <form class="message-form" action="URL" method="post">
+              <div class="message-form-wrapper">
+                <label class="message-form__textarea"><textarea name="message"></textarea>
+                </label>
+              </div>
+              <input type="submit" class="btn" value="Отправить форму">
+            </form>
+            <span class="sup-descr"><sup>*</sup>-обязательные поля</span>
+          </div>
+        </div>
+    </main>
+    <footer class="page‐footer  page‐footer--form">
+      <div class="page‐footer__wrapper  page‐footer--form__wrapper">
+        <div class="page-footer__logo  page-footer--form__logo"> <!-- логотип PINK -->
+          <img src="http://placehold.it/150x100">
+        </div>
+        <article class="social-group  social-group--form">
+          <a class="social-group__btn  social-btn-inst" href="#"></a>
+          <a class="social-group__btn  social-btn-fb" href="#"></a>
+          <a class="social-group__btn  social-btn-youtube" href="#"></a>
+        </article>
+        <div class="page‐footer__copyright  page‐footer--form__copyright">
+          <p>Разработано</p>
+          <a class="html-logo html-logo--form" href="https://htmlacademy.ru"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
