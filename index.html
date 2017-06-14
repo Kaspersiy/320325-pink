@@ -6,7 +6,232 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <div class="page-header__wrap">
+        <nav class="main-nav  main-nav--open"> <!-- main-nav--open - для открытого состояния меню -->
+          <div class="main-nav__logo"> <!-- логотип PINK без очков-->
+            <img src="http://placehold.it/150x100">
+          </div>
+          <span class="main-nav__toggler"><span></span></span>
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active">
+                <a class="main-nav__link  descr_inv">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  descr_inv" href="#">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  descr_inv" href="#">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  descr_inv" href="#">HTML Academy</a>
+              </li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+        <div class="page-main__wrap">
+          <header class="page-main__header">
+            <div class="page-main__header-bg">
+              <img class="page-main__header-bg-photo" src="http://placehold.it/150x100" width="800" height="600" alt="Pink view">
+            </div>
+            <article class="download-app">
+              <h1 class="page-main__title title title_inv">Взгляните на жизнь иначе</h1>  <!-- display:hiden для мобильной версии -->
+              <button class="download-app__btn  btn">Скачать приложение</button>
+              <section class="download-app__links">
+                <ul class="download-app__list">
+                  <li class="download-app__item"><a href="#">Apple</a></li>
+                  <li class="download-app__item"><a href="#">Android</a></li>
+                  <li class="download-app__item"><a href="#">Windows</a></li>
+                </ul>
+              </section>
+              <p class="download-app__descr descr_inv">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </article>
+          </header>
+          <section class="presentation">
+            <div class="presentation__header">
+              <h2 class="presentation__title title">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
+            </div>
+            <div class="presentation__offer-wrapper">
+              <ul class="presentation__offer">
+                <li class="presentation__item  presentation__item--up-spirits">
+                  <img class="presentation__item-img  presentation__item-img--bleached" src="http://placehold.it/150x100" width="800" height="600" alt="Pink bleached">  <!-- display:hiden для мобильной версии -->
+                  <h3 class="presentation__item-title">Поднимает настроение</h3>
+                  <p class="presentation__item-descr  descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколко кликов!</p>
+                </li>
+                <li class="presentation__item  presentation__item--change-world">
+                  <img class="presentation__item-img  presentation__item-img--pink" src="http://placehold.it/150x100" width="800" height="600" alt="Pink bleached">  <!-- display:hiden для мобильной версии -->
+                  <h3 class="presentation__item-title">Меняет мир вокруг</h3>
+                  <p class="presentation__item-descr  descr">Сделаейте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </li>
+                <li class="presentation__item  presentation__item--new-friens">
+                  <img class="presentation__item-img  presentation__item-img--smile presentation__item-img--smile-bottom" src="http://placehold.it/150x100" width="800" height="600" alt="Pink bleached">
+                  <h3 class="presentation__item-title">Заводит новых друзей</h3>
+                  <p class="presentation__item-descr  descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </li>
+              </ul>
+              <div class="presentation__footer">  <!-- display:hiden для мобильной версии -->
+                <img class="presentation__footer-img" src="http://placehold.it/150x100" width="800" height="600" alt="watch">
+                <div class="presentation__footer-item">
+                  <h3 class="presentation__item-title">Эффект на 24 часа!</h3>
+                  <p class="presentation__item-descr  descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                  <a class="presentation__item-link" href="#">Узнать больше об исследовании</a>
+                </div>
+              </div>
+            </div>
+            <div class="presentation__feedback">
+              <div class="presentation__feedback-wrapper">
+                <img class="presentation__feedback-img" src="http://placehold.it/150x100" width="800" height="600" alt="quotes">  <!-- display:hiden для мобильной версии -->
+                <div class="presentation__slider-wrapper  slider">
+                  <div class="presentation__list‐wrapper  slider__wrapper">     <!--Заметка для себя: Взал slider__wrapper и inner из лекции. Может они не нужны-->
+                    <div class="presentation__list  slider__inner">
+                      <div class="presentation__list-title-wrapper">
+                        <p class="presentation__list-title">Николай Петров</p>
+                        <p class="presentation__list-subtitle  descr">25 лет, водитель трамвая</p>  <!-- display:hiden для мобильной версии -->
+                      </div>
+                      <p class="presentation__list-descr  descr">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+                    </div>
+                  </div>
+                  <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+                  <button class="reviews__next" type="button">Следующий отзыв</button>
+                </div>
+                <div class="presentation__feedback-pagination  slider__pagination">
+                  <span class="presentation__feedback-pagination-item  slider__pagination-item--active"></span>
+                  <span class="presentation__feedback-pagination-item"></span>
+                  <span class="presentation__feedback-pagination-item"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <article class="price">
+            <div class="price__wrapper  slider">
+              <header class="price__header  slider__header">
+                  <ul class="price__header-list  slider__list">
+                      <li class="price__header-item  slider__item">
+                      </li>
+                      <li class="price__header-item  slider__item">
+                        <h4 class="price__header-title">база</h4>
+                        <p class="price__header-descr">1,99 USD</p>
+                      </li>
+                      <li class="price__header-item  slider__item">
+                        <img class="price__header-pict" src="http://placehold.it/150x100" alt="Hit">
+                        <h4 class="price__header-title">стандарт</h4>
+                        <p class="price__header-descr">3,99 USD</p>
+                      </li>
+                      <li class="price__header-item  slider__item">
+                        <h4 class="price__header-title">анлим</h4>
+                        <p class="price__header-descr">9,99 USD</p>
+                      </li>
+                  </ul>
+              </header>
+              <section class="price__content  slider__content">
+                <ul class="price__content-list  slider__list">
+                    <li class="price__content-item  slider__item">
+                      <p class="price__content-title  descr">Розовый фильтр</p>
+                    </li>
+                    <li class="price__content-item  slider__item">
+                      <p class="price__content-descr  descr">Розовый фильтр</p>  <!-- display:hiden для планшета и ПК версии -->
+                      <span class="price__content-availability  price__content-symbol--stock" src="http://placehold.it/150x100" alt="In stock">
+                    </li>
+                    <li class="price__content-item  slider__item">
+                      <p class="price__content-descr  descr">Розовый фильтр</p>  <!-- display:hiden для планшета и ПК версии -->
+                      <span class="price__content-availability  price__content-symbol--stock" src="http://placehold.it/150x100" alt="In stock">
+                    </li>
+                    <li class="price__content-item  slider__item">
+                      <p class="price__content-descr  descr">Розовый фильтр</p>  <!-- display:hiden для планшета и ПК версии -->
+                      <span class="price__content-availability  price__content-symbol--stock" src="http://placehold.it/150x100" alt="In stock">
+                    </li>
+                </ul>
+                <ul class="price__content-list  slider__list">
+                    <li class="price__content-item  slider__item">
+                      <p class="price__content-title  descr">Смайлики</p>
+                    </li>
+                    <li class="price__content-item  slider__item">
+                      <p class="price__content-descr  descr">Смайлики</p>  <!-- display:hiden для планшета и ПК версии -->
+                      <span class="price__content-availability  price__content-symbol--notstock" src="http://placehold.it/150x100" alt="Out of stock">
+                    </li>
+                    <li class="price__content-item  slider__item">
+                      <p class="price__content-descr  descr">Смайлики</p>  <!-- display:hiden для планшета и ПК версии -->
+                      <span class="price__content-availability  price__content-symbol--stock" src="http://placehold.it/150x100" alt="In stock">
+                    </li>
+                    <li class="price__content-item  slider__item">
+                      <p class="price__content-descr  descr">Смайлики</p>  <!-- display:hiden для планшета и ПК версии -->
+                      <span class="price__content-availability  price__content-symbol--stock" src="http://placehold.it/150x100" alt="In stock">
+                    </li>
+                </ul>
+                <ul class="price__content-list  slider__list">
+                    <li class="price__content-item  slider__item">
+                      <p class="price__content-title  descr">Комментарии</p>
+                    </li>
+                    <li class="price__content-item  slider__item">
+                      <p class="price__content-descr  descr">Комментарии</p>  <!-- display:hiden для планшета и ПК версии -->
+                      <span class="price__content-availability  price__content-symbol--notstock" src="http://placehold.it/150x100" alt="Out of stock">
+                    </li>
+                    <li class="price__content-item  slider__item">
+                      <p class="price__content-descr  descr">Комментарии</p>  <!-- display:hiden для планшета и ПК версии -->
+                      <span class="price__content-availability  price__content-symbol--notstock" src="http://placehold.it/150x100" alt="Out of stock">
+                    </li>
+                    <li class="price__content-item  slider__item">
+                      <p class="price__content-descr  descr">Комментарии</p>  <!-- display:hiden для планшета и ПК версии -->
+                      <span class="price__content-availability  price__content-symbol--stock" src="http://placehold.it/150x100" alt="In stock">
+                    </li>
+                </ul>
+              </section>
+              <div class="price__pagination  slider__pagination">
+                <span class="price__pagination-item"></span>
+                <span class="price__pagination-item  slider__pagination-item--active"></span>
+                <span class="price__pagination-item"></span>
+              </div>
+            </div>
+          </article>
+          <footer class="page-main__footer">
+            <div class="page-main__footer__wrapper">
+              <h2 class="page-main__footer-title  title">Остались вопросы? Свяжитесь с нами!</h2>
+              <div class="page-main__footer-item">
+                <p class="page-main__footer-subtitle">Звоните:</p>
+                <p class="page-main__footer-descr  descr-pink"><a href="tel:+78125556666">+7 (812) 555‐66‐66</a></p>
+              </div>
+              <div class="page-main__footer-item">
+                <p class="page-main__footer-subtitle">Приезжайте в гости:</p>
+                <p class="page-main__footer-descr  descr-pink">ул. Большая Конюшенная, 19/8</p>
+              </div>
+              <div class="page-main__footer-item">
+                <p class="page-main__footer-subtitle">Пишите:</p>
+                <p class="page-main__footer-descr  descr-pink">mail@htmlacademy.ru</p>
+              </div>
+            </div>
+            <div id="yandex-map">
+            </div>
+          </footer>
+        </div>
+    </main>
+
+    <footer class="page‐footer"> <!-- display:hiden для мобильной версии -->
+      <div class="page‐footer__wrapper">
+        <div class="page-footer__logo"> <!-- логотип PINK -->
+          <img src="http://placehold.it/150x100">
+        </div>
+        <article class="social-group">
+          <ul class="social-links">
+            <li class="social-links__item">
+              <a class="social-links__link  social-btn  social-btn--twitter" href="#"></a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link social-btn  social-btn--facebook" href="#"></a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link social-btn  social-btn--youtube" href="#"></a>
+            </li>
+          </ul>
+        </article>
+        <div class="page‐footer__copyright">
+          <p class="page‐footer__copyright-descr  descr">Разработано</p>
+          <a class="html-logo" href="https://htmlacademy.ru"></a>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>

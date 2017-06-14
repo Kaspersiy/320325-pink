@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк - фотографии и отзывы</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="page-header__wrap">
+        <nav class="main-nav  main-nav--open"> <!-- main-nav--open - для открытого состояния меню -->
+          <div class="main-nav__logo"> <!-- логотип PINK без очков-->
+            <img src="http://placehold.it/150x100">
+          </div>
+          <span class="main-nav__toggler"><span></span></span>
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active">
+                <a class="main-nav__link  descr_inv">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  descr_inv" href="#">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  descr_inv" href="#">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  descr_inv" href="#">HTML Academy</a>
+              </li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+        <div class="page-main-wrap">
+          <header class="photo-header">
+            <div class="photo-header__wrap">
+              <h1 class="photo-header__title  title_inv">Фотографии пользователей</h1>
+            </div>
+          </header>
+          <section class="reviews">
+            <p class="reviews__subtitle  descr">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+            <div class="reviews__wrapper  reviews__wrapper--panorama">
+              <div class="reviews__photo  reviews__photo--panorama">
+                <img src="http://placehold.it/150x100" alt="Панорама дня">
+              </div>
+              <div class="reviews__photo-label">
+                <img src="http://placehold.it/150x100" alt="Лэйбл панорама дня">
+              </div>
+              <div class="reviews__inner  reviews__inner--panorama">
+                <p class="reviews__author">Анна <span class="reviews__time-ago">(5 минут назад)</span></p>
+                <p class="reviews__descr  descr">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <div class="social-like  social-like--panorama">
+                  <button class="social-like__btn  social-like__btn--panorama" type="button"><span class="like"></span></button>
+                  <p class="social-like__mark  social-like__mark--panorama  descr-pink">Нравится:</p>
+                  <span class="social-like__result">215</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__wrapper">
+              <div class="reviews__photo">
+                <img src="http://placehold.it/150x100" alt="Фото отзыва">
+              </div>
+              <div class="reviews__inner">
+                <p class="reviews__author">Левон <span class="reviews__time-ago">(5 часов назад)</span></p>
+                <p class="reviews__descr  descr">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="social-like">
+                  <button class="social-like__btn" type="button"><span class="like"></span></button>
+                  <p class="social-like__mark  descr-pink">Нравится:</p>
+                  <span class="social-like__result">356</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__wrapper">
+              <div class="reviews__photo">
+                <img src="http://placehold.it/150x100" alt="Фото отзыва">
+              </div>
+              <div class="reviews__inner">
+                <p class="reviews__author">Антон <span class="reviews__time-ago">(12 часов назад)</span></p>
+                <p class="reviews__descr  descr">Соседи будут рады!</p>
+                <div class="social-like">
+                  <button class="social-like__btn" type="button"><span class="like"></span></button>
+                  <p class="social-like__mark  descr-pink">Нравится:</p>
+                  <span class="social-like__result">666</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__wrapper">
+              <div class="reviews__photo">
+                <img src="http://placehold.it/150x100" alt="Фото отзыва">
+              </div>
+              <div class="reviews__inner">
+                <p class="reviews__author">Борис <span class="reviews__time-ago">(20 часов назад)</span></p>
+                <p class="reviews__descr  descr">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="social-like">
+                  <button class="social-like__btn" type="button"><span class="like"></span></button>
+                  <p class="social-like__mark  descr-pink">Нравится:</p>
+                  <span class="social-like__result">215</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__wrapper">
+              <div class="reviews__photo">
+                <img src="http://placehold.it/150x100" alt="Фото отзыва">
+              </div>
+              <div class="reviews__inner">
+                <p class="reviews__author">Сергей <span class="reviews__time-ago">(25 часов назад)</span></p>
+                <p class="reviews__descr  descr">Самая кубанская в мире!</p>
+                <div class="social-like">
+                  <button class="social-like__btn" type="button"><span class="like"></span></button>
+                  <p class="social-like__mark  descr-pink">Нравится:</p>
+                  <span class="social-like__result">4</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__wrapper">
+              <div class="reviews__photo">
+                <img src="http://placehold.it/150x100" alt="Фото отзыва">
+              </div>
+              <div class="reviews__inner">
+                <p class="reviews__author">Максим <span class="reviews__time-ago">(40 часов назад)</span></p>
+                <p class="reviews__descr  descr">Где снег-то?</p>
+                <div class="social-like">
+                  <button class="social-like__btn" type="button"><span class="like"></span></button>
+                  <p class="social-like__mark  descr-pink">Нравится:</p>
+                  <span class="social-like__result">150</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__wrapper">
+              <div class="reviews__photo">
+                <img src="http://placehold.it/150x100" alt="Фото отзыва">
+              </div>
+              <div class="reviews__inner">
+                <p class="reviews__author">Надежда <span class="reviews__time-ago">(45 часов назад)</span></p>
+                <p class="reviews__descr  descr">Всем GM и взаимные лайки!</p>
+                <div class="social-like">
+                  <button class="social-like__btn" type="button"><span class="like"></span></button>
+                  <p class="social-like__mark  descr-pink">Нравится:</p>
+                  <span class="social-like__result">2560</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-footer__wrapper">
+              <p class="reviews-footer__descr  descr">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+            </div>
+          </section>
+          <form class="upload" action="URL" method="get">
+            <div class="upload__photo">
+              <img src="http://placehold.it/150x100" alt="Запостить своё фото">
+            </div>
+            <div class="upload__control-block">
+              <div class="upload__crop">
+                <label class="upload__crop-lbl">
+                  <input type="hidden" value="1" name="crop">
+                  <button class="upload__crop-btn  btn-control  btn-control--active" type="button"></button>
+                </label>
+                <div class="upload__range-control">   <!-- display:hiden для мобильной версии -->
+                  <div class="upload__scale">
+                    <span class="upload__bar"></span>
+                  </div>
+                </div>
+                <span class="upload__underlining"></span>  <!-- display:hiden для мобильной версии -->
+              </div>
+              <div class="upload__fill">
+                <label class="upload__fill-lbl">
+                  <input type="hidden" value="2" name="fill">
+                  <button class="upload__fill-btn  btn-control" type="button"></button>
+                </label>
+                <div class="upload__range-control">   <!-- display:hiden для мобильной версии -->
+                  <div class="upload__scale">
+                    <span class="upload__bar"></span>
+                  </div>
+                </div>
+                <span class="upload__underlining"></span>  <!-- display:hiden для мобильной версии -->
+              </div>
+              <div class="upload__contrast">
+                <label class="upload__contrast-lbl">
+                  <input type="hidden" value="3" name="contrast">
+                  <button class="upload__contrast-btn  btn-control" type="button"></button>
+                </label>
+                <div class="upload__range-control">   <!-- display:hiden для мобильной версии -->
+                  <div class="upload__scale">
+                    <span class="upload__bar"></span>
+                  </div>
+                </div>
+                <span class="upload__underlining"></span>
+              </div>
+            </div>
+            <div class="upload_submit-wrapper">
+              <button class="upload__btn upload__btn--accept" type="submit">Запостить</button>
+              <button class="upload__btn upload__btn--cancel" type="reset">Отмена</button>
+            </div>
+          </form>
+        </div>
+    </main>
+
+    <footer class="page‐footer"> <!-- display:hiden для мобильной версии -->
+      <div class="page‐footer__wrapper">
+        <div class="page-footer__logo"> <!-- логотип PINK -->
+          <img src="http://placehold.it/150x100">
+        </div>
+        <article class="social-group">
+          <ul class="social-links">
+            <li class="social-links__item">
+              <a class="social-links__link  social-btn  social-btn--twitter" href="#"></a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link social-btn  social-btn--facebook" href="#"></a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link social-btn  social-btn--youtube" href="#"></a>
+            </li>
+          </ul>
+        </article>
+        <div class="page‐footer__copyright">
+          <p class="page‐footer__copyright-descr  descr">Разработано</p>
+          <a class="html-logo" href="https://htmlacademy.ru"></a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

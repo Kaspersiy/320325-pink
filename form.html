@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк - форма конкурса</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="page-header__wrap">
+        <nav class="main-nav  main-nav--open"> <!-- main-nav--open - для открытого состояния меню -->
+          <div class="main-nav__logo"> <!-- логотип PINK без очков-->
+            <img src="http://placehold.it/150x100">
+          </div>
+          <span class="main-nav__toggler"><span></span></span>
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active">
+                <a class="main-nav__link  descr_inv">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  descr_inv" href="#">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  descr_inv" href="#">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  descr_inv" href="#">HTML Academy</a>
+              </li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+        <div class="page-main__wrap">
+          <header class="form-header">
+            <div class="form-header__wrap">
+              <h1 class="form-header__title  title_inv">Конкурс на самое безбашенное путешествие с Пинк</h1>
+            </div>
+          </header>
+          <form class="persdata" action="https://echo.htmlacademy.ru" method="post">
+            <div class="persdata__wrapper">
+              <p class="persdata__descr descr">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+                <span class="persdata__descr  persdata__descr--no-mobile  descr">Пожалуйста, заполните форму ниже:</span>
+              </p>
+              <div class="persdata__fio">
+                <div class="persdata__fio-inner">
+                  <label class="persdata__family  persdata__rectangle"><span class="persdata__family-title  descr-pink">Фамилия:</span>
+                    <input type="text" value="Укажите фамилию *" name="field-family">
+                  </label>
+                </div>
+                <div class="persdata__fio-inner">
+                  <label class="persdata__name  persdata__rectangle"><span class="persdata__name-title  descr-pink">Имя:</span>
+                    <input type="text" value="Введите ваше имя *" name="field-name">
+                  </label>
+                </div>
+                <div class="persdata__fio-inner">
+                  <label class="persdata__midname  persdata__rectangle"><span class="persdata__midname-title  descr-pink">Отчество:</span>
+                    <input type="text" value="Ну и отчество тоже" name="field-midname">
+                  </label>
+                </div>
+              </div>
+              <div class="persdata__achiev">
+                <div class="persdata__achiev-wrapper">
+                  <p class="persdata__achiev-title  descr-pink">Ваши безбашенные достижения в путешествии</p>
+                        <label class="persdata__achiev-item"><input type="checkbox" value="1" name="selfie">
+                        <span class="descr">Сделал селфи с акулой</span></label>
+                        <label class="persdata__achiev-item"><input type="checkbox" value="2" name="beach">
+                        <span class="descr">Обгорел на пляже</span></label>
+                        <label class="persdata__achiev-item"><input type="checkbox" value="3" name="chuck">
+                        <span class="descr">Видел Чака Норриса</span></label>
+                        <label class="persdata__achiev-item"><input type="checkbox" value="4" name="souvenir">
+                        <span class="descr">Накупил сувениров</span></label>
+                        <label class="persdata__achiev-item"><input type="checkbox" value="5" name="tower">
+                        <span class="descr">Удержал башню</span></label>
+                        <label class="persdata__achiev-item"><input type="checkbox" value="6" name="hotel">
+                        <span class="descr">Разгромил отель</span></label>
+                </div>
+              </div>
+              <div class="persdata__contactdate">
+                <div class="persdata__contactdate-wrapper">
+                  <p class="persdata__contactdate-title  descr-pink">Контактная информация</p>   <!-- display:hiden для мобильной версии -->
+                  <div class="persdata__contactdate-inner">
+                    <label class="persdata__tel  persdata__rectangle"><span class="persdata__tel-title  descr-pink">Номер телефона</span>
+                      <input type="text" value="Номер, пожалуйста" name="field-tel">
+                      <span class="persdata__tel-pict"></span>
+                    </label>
+                  </div>
+                  <div class="persdata__contactdate-inner">
+                    <label class="persdata__email  persdata__rectangle"><span class="persdata__email-title  descr-pink">Адрес почты</span>
+                      <input type="text" value="Введите почту *" name="field-email">
+                      <span class="persdata__email-pict"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="persdata__app">
+                <div class="persdata__app-wrapper">
+                  <p class="persdata__app-title  descr-pink">С какими приложениями путешестовали?</p>
+                        <label class="persdata__app-item"><input type="radio" value="1" name="ios">
+                        <span class="descr">Pink для iOS</span></label>
+                        <label class="persdata__app-item"><input type="radio" value="2" name="android">
+                        <span class="descr">Pink для Android</span></label>
+                        <label class="persdata__app-item"><input type="radio" value="3" name="windows">
+                        <span class="descr">Windows Phone</span></label>
+                </div>
+              </div>
+              <div class="persdata__message">
+                <div class="persdata__message-wrapper">
+                  <p class="persdata__message-title  descr-pink">Опишите свои эмоции</p>
+                  <div class="persdata__message-inner">
+                    <label class="persdata__message-textarea"><textarea name="message">Можно прям в красках, не стесняясь в выражениях</textarea>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <input class="persdata__btn btn" type="submit" value="Отправить форму">
+              <span class="persdata__sup-descr  descr"><sup>*</sup>-обязательные поля</span>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="page‐footer"> <!-- display:hiden для мобильной версии -->
+      <div class="page‐footer__wrapper">
+        <div class="page-footer__logo"> <!-- логотип PINK -->
+          <img src="http://placehold.it/150x100">
+        </div>
+        <article class="social-group">
+          <ul class="social-links">
+            <li class="social-links__item">
+              <a class="social-links__link  social-btn  social-btn--twitter" href="#"></a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link social-btn  social-btn--facebook" href="#"></a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link social-btn  social-btn--youtube" href="#"></a>
+            </li>
+          </ul>
+        </article>
+        <div class="page‐footer__copyright">
+          <p class="page‐footer__copyright-descr  descr">Разработано</p>
+          <a class="html-logo" href="https://htmlacademy.ru"></a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
